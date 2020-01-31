@@ -39,12 +39,14 @@
             this.lblTotal = new System.Windows.Forms.Label();
             this.lblDagsTotal = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lblMoms = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // tbPris
             // 
             this.tbPris.Location = new System.Drawing.Point(107, 46);
-            this.tbPris.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbPris.Margin = new System.Windows.Forms.Padding(2);
             this.tbPris.Name = "tbPris";
             this.tbPris.Size = new System.Drawing.Size(68, 20);
             this.tbPris.TabIndex = 0;
@@ -52,7 +54,7 @@
             // btnEnter
             // 
             this.btnEnter.Location = new System.Drawing.Point(201, 46);
-            this.btnEnter.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEnter.Margin = new System.Windows.Forms.Padding(2);
             this.btnEnter.Name = "btnEnter";
             this.btnEnter.Size = new System.Drawing.Size(50, 36);
             this.btnEnter.TabIndex = 1;
@@ -93,7 +95,7 @@
             // btnSum
             // 
             this.btnSum.Location = new System.Drawing.Point(201, 86);
-            this.btnSum.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSum.Margin = new System.Windows.Forms.Padding(2);
             this.btnSum.Name = "btnSum";
             this.btnSum.Size = new System.Drawing.Size(50, 54);
             this.btnSum.TabIndex = 5;
@@ -114,7 +116,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(39, 127);
+            this.label4.Location = new System.Drawing.Point(39, 175);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(59, 13);
@@ -134,7 +136,7 @@
             // lblDagsTotal
             // 
             this.lblDagsTotal.AutoSize = true;
-            this.lblDagsTotal.Location = new System.Drawing.Point(105, 127);
+            this.lblDagsTotal.Location = new System.Drawing.Point(105, 175);
             this.lblDagsTotal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDagsTotal.Name = "lblDagsTotal";
             this.lblDagsTotal.Size = new System.Drawing.Size(35, 13);
@@ -149,11 +151,31 @@
             this.listBox1.Size = new System.Drawing.Size(120, 95);
             this.listBox1.TabIndex = 10;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(42, 127);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(35, 13);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Moms";
+            // 
+            // lblMoms
+            // 
+            this.lblMoms.AutoSize = true;
+            this.lblMoms.Location = new System.Drawing.Point(104, 128);
+            this.lblMoms.Name = "lblMoms";
+            this.lblMoms.Size = new System.Drawing.Size(35, 13);
+            this.lblMoms.TabIndex = 12;
+            this.lblMoms.Text = "label6";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(533, 292);
+            this.Controls.Add(this.lblMoms);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.lblDagsTotal);
             this.Controls.Add(this.lblTotal);
@@ -165,7 +187,7 @@
             this.Controls.Add(this.lblSubtotal);
             this.Controls.Add(this.btnEnter);
             this.Controls.Add(this.tbPris);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -186,6 +208,8 @@
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.Label lblDagsTotal;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblMoms;
     }
 }
 

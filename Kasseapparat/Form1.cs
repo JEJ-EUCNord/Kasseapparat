@@ -14,6 +14,7 @@ namespace Kasseapparat
     {
         decimal subtotal;
         decimal total;
+        decimal moms;
         decimal dagstotal;
         List<decimal> priser = new List<decimal>();
 
@@ -35,6 +36,7 @@ namespace Kasseapparat
         private void btnSum_Click(object sender, EventArgs e)
         {
             total = subtotal;
+            moms = total/5;
             dagstotal = dagstotal + total;
             subtotal = 0;
 
@@ -51,6 +53,7 @@ namespace Kasseapparat
             lblTotal.Text = total.ToString();
             lblDagsTotal.Text = dagstotal.ToString();
             lblSubtotal.Text = subtotal.ToString();
+            lblMoms.Text = moms.ToString();
             tbPris.Text = "";
         }
     }
