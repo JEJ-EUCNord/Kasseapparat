@@ -15,6 +15,8 @@ namespace Kasseapparat
         decimal subtotal;
         decimal total;
         decimal dagstotal;
+        List<decimal> priser = new List<decimal>();
+
 
         public Form1()
         {
@@ -25,8 +27,8 @@ namespace Kasseapparat
         private void btnEnter_Click(object sender, EventArgs e)
         {
             subtotal = subtotal + Decimal.Parse(tbPris.Text);
-            lblSubtotal.Text = subtotal.ToString();
-            
+            priser.Add(Decimal.Parse(tbPris.Text));
+
             Opdater();
         }
 
@@ -36,7 +38,12 @@ namespace Kasseapparat
             dagstotal = dagstotal + total;
             subtotal = 0;
 
-            Opdater();         
+            Opdater();
+
+            foreach (var item in priser)
+            {
+                listBox1.Items.Add(item.ToString());
+            }
         }
         
         private void Opdater()
