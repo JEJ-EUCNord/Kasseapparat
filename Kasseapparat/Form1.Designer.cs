@@ -41,6 +41,11 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label5 = new System.Windows.Forms.Label();
             this.lblMoms = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lblByttepenge = new System.Windows.Forms.Label();
+            this.tbModtaget = new System.Windows.Forms.TextBox();
+            this.btnByttepenge = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tbPris
@@ -116,7 +121,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(39, 175);
+            this.label4.Location = new System.Drawing.Point(42, 270);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(59, 13);
@@ -136,7 +141,7 @@
             // lblDagsTotal
             // 
             this.lblDagsTotal.AutoSize = true;
-            this.lblDagsTotal.Location = new System.Drawing.Point(105, 175);
+            this.lblDagsTotal.Location = new System.Drawing.Point(108, 270);
             this.lblDagsTotal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDagsTotal.Name = "lblDagsTotal";
             this.lblDagsTotal.Size = new System.Drawing.Size(35, 13);
@@ -169,11 +174,59 @@
             this.lblMoms.TabIndex = 12;
             this.lblMoms.Text = "label6";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(39, 174);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(52, 13);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Modtaget";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(39, 204);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(61, 13);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "Byttepenge";
+            // 
+            // lblByttepenge
+            // 
+            this.lblByttepenge.AutoSize = true;
+            this.lblByttepenge.Location = new System.Drawing.Point(108, 204);
+            this.lblByttepenge.Name = "lblByttepenge";
+            this.lblByttepenge.Size = new System.Drawing.Size(35, 13);
+            this.lblByttepenge.TabIndex = 16;
+            this.lblByttepenge.Text = "label9";
+            // 
+            // tbModtaget
+            // 
+            this.tbModtaget.Location = new System.Drawing.Point(107, 167);
+            this.tbModtaget.Name = "tbModtaget";
+            this.tbModtaget.Size = new System.Drawing.Size(68, 20);
+            this.tbModtaget.TabIndex = 17;
+            // 
+            // btnByttepenge
+            // 
+            this.btnByttepenge.Location = new System.Drawing.Point(201, 167);
+            this.btnByttepenge.Name = "btnByttepenge";
+            this.btnByttepenge.Size = new System.Drawing.Size(74, 50);
+            this.btnByttepenge.TabIndex = 18;
+            this.btnByttepenge.Text = "Byttepenge";
+            this.btnByttepenge.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(533, 292);
+            this.ClientSize = new System.Drawing.Size(533, 329);
+            this.Controls.Add(this.btnByttepenge);
+            this.Controls.Add(this.tbModtaget);
+            this.Controls.Add(this.lblByttepenge);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.lblMoms);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.listBox1);
@@ -189,7 +242,7 @@
             this.Controls.Add(this.tbPris);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Kasseapparat";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -210,6 +263,11 @@
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblMoms;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblByttepenge;
+        private System.Windows.Forms.TextBox tbModtaget;
+        private System.Windows.Forms.Button btnByttepenge;
     }
 }
 
