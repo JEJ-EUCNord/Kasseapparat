@@ -216,6 +216,7 @@
             this.btnByttepenge.TabIndex = 18;
             this.btnByttepenge.Text = "Byttepenge";
             this.btnByttepenge.UseVisualStyleBackColor = true;
+            this.btnByttepenge.Click += new System.EventHandler(this.btnByttepenge_Click);
             // 
             // Form1
             // 

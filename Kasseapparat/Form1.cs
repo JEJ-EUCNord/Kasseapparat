@@ -16,6 +16,7 @@ namespace Kasseapparat
         decimal total;
         decimal moms;
         decimal dagstotal;
+        decimal byttepenge;
         List<decimal> priser = new List<decimal>();
 
 
@@ -47,6 +48,13 @@ namespace Kasseapparat
                 listBox1.Items.Add(item.ToString());
             }
         }
+
+        private void btnByttepenge_Click(object sender, EventArgs e)
+        {
+            byttepenge = decimal.Parse(tbModtaget.Text) - total;
+
+            Opdater();
+        }
         
         private void Opdater()
         {
@@ -54,6 +62,7 @@ namespace Kasseapparat
             lblDagsTotal.Text = dagstotal.ToString();
             lblSubtotal.Text = subtotal.ToString();
             lblMoms.Text = moms.ToString();
+            lblByttepenge.Text = byttepenge.ToString();
             tbPris.Text = "";
         }
     }
